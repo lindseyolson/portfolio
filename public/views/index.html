@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <title></title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
     <script src="scripts/github.service.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body ng-app="myApp">
+  <body class='container' ng-app="myApp">
+    <h1>Lindsey Olson</h1>
+    <ng-view></ng-view>
   </body>
 </html>

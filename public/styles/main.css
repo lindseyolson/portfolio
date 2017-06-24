@@ -1,0 +1,8 @@
+li {
+  list-style: none;
+  margin: 1.5em;
+}
+
+.nav-tabs {
+  display: inline-block;
+}

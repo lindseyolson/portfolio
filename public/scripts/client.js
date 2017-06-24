@@ -24,4 +24,8 @@ function ProfileController(GithubAPI){
 
 function ProjectsPageController(GithubAPI) {
   var vm = this;
+
+  GithubAPI.githubRepos().then(function(response){
+    vm.projects = response;
+  }); // end githubRepos
 } // end ProjectsPageController

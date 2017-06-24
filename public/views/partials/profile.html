@@ -1,12 +1,8 @@
-<div>
-  <h1>Profile Page</h1>
-  <div>
-    name: {{ pc.profile.name }} </br>
-    location: {{ pc.profile.location }} </br>
-    username: {{ pc.profile.login }} </br>
-    url: {{ pc.profile.html_url }} </br>
+<!-- <img class='col-md-4' src="images/Lindsey Olson.jpg" alt="lindsey olson"> -->
+<div class='about-me col-med-8 col-med-offset-2'>
+  <p class='intro'>Hello, my name is Lindsey. I am a Full Stack Software Developer located in St. Paul, MN.</p>
     bio: {{ pc.profile.bio }} </br>
-    email: {{ pc.profile.email }} </br>
-    repos: {{ pc.profile.repos_url }} </br>
-  </div>
+    {{ pc.profile.location }} </br>
+    <a href="mailto:lindseyolson00@gmail.com?subject=Hello">{{ pc.profile.email }}</a> </br>
+    <a href='{{ pc.profile.html_url }}'>{{ pc.profile.html_url }}</a></br>
 </div>

@@ -1,8 +1,38 @@
 li {
   list-style: none;
-  margin: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .nav-tabs {
   display: inline-block;
+}
+
+.intro {
+  font-family: 'EB Garamond', serif;
+  font-size: 40px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.navbar {
+  background-color: #f7f7f7;
+}
+
+.container-fluid {
+  margin-left: 6em;
+}
+
+.navbar-brand {
+  font-size: 14px;
+  font-family: 'Palanquin', sans-serif;
+}
+
+.about-me {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 16px;
+}
+
+.project-list {
+  margin-top: 6em;
 }

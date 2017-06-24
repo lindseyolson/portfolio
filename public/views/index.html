@@ -10,13 +10,17 @@
     <script src="scripts/githubauth.js" charset="utf-8"></script>
     <link rel="stylesheet" href="vendors/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Palanquin:100" rel="stylesheet">
   </head>
   <body class='container' ng-app="myApp">
-    <h1>Lindsey Olson</h1>
-    <ul class='nav-tabs'>
-      <li><a href="#!">Profile</a></li>
-      <li><a href="#!/projects">Projects</a></li>
-    </ul>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#!">About Me</a>
+        <a class="navbar-brand" href="#!/projects">Work</a>
+      </div>
+    </nav>
+    <div class="row">
     <ng-view></ng-view>
+    </div>
   </body>
 </html>

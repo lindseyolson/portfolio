@@ -1,8 +1,7 @@
   <ul class='project-list'>
     <li class='col-md-6' ng-repeat='project in ppc.projects | orderBy: "-created_at"'>
-    Project Name: {{ project.name }} </br>
-    {{ project.html_url }} </br>
+    <a ng-href='{{ project.html_url }}'>{{ project.name }}</a> </br>
     Created: {{ project.created_at | date }} </br>
-    <!-- Description: {{ project.decription }} -->
+    Description: {{ project.decription }}
     </li>
   </ul>

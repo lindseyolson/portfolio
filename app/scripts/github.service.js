@@ -1,7 +1,6 @@
 myApp.service('GithubAPI', function($http) {
-  //Enter your token and username here:
 
-  //Call to Github API to fetch user's profile info
+  //Call to Github API to fetch profile info
     this.githubProfile = function(){
       return $http({
         method: 'GET',
@@ -12,7 +11,7 @@ myApp.service('GithubAPI', function($http) {
       });
     };
 
-    //Call to Github API to fetch list of user's repos
+    //Call to Github API to fetch list of repos
     this.githubRepos = function(){
       return $http({
         method: 'GET',

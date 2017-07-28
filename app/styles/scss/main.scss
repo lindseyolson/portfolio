@@ -1,4 +1,7 @@
+$primary-font: 'EB Garamond', serif;
+
 li {
+
   list-style: none;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -9,7 +12,7 @@ li {
 }
 
 .intro {
-  font-family: 'EB Garamond', serif;
+  font-family: $primary-font;
   font-size: 40px;
   margin-top: 3em;
   margin-bottom: 2em;
@@ -35,4 +38,27 @@ li {
 
 .project-list {
   margin-top: 6em;
+}
+
+img {
+  height: 40em;
+}
+
+.projectSquare {
+  height: 10em;
+  width: 15em;
+  background-color: #49AB7A;
+  border-radius: 5px;
+}
+
+.projectSquare:hover {
+  background-color: #4fc188;
+}
+
+#flora {
+  font-family: 'Zilla Slab', serif;
+  text-align: center;
+  padding-top: 1.25em;
+  font-size: 36px;
+  color: white;
 }

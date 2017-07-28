@@ -6,12 +6,11 @@ var app = express();
 // https://www.npmjs.com/package/request
 var request = require('request');
 
-// http://www.tgreenidge.com/blog/twitter-keys-heroku
-// API Keys are environment variables in Heroku
+// environment variables for Heroku
 var username = process.env.USER_NAME || require('./githubauth').username;
 var oauthToken = process.env.GIT_TOKEN || require('./githubauth').oauthToken;
 
-var port = process.env.PORT || 3004;
+var port = process.env.PORT || 1616;
 
 app.use(express.static('public'));
 

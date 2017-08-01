@@ -1,8 +1,31 @@
+// requires
 const gulp = require ('gulp');
 const sass = require ('gulp-sass');
+const autoprefixer = require ('gulp-autoprefixer');
+const cleanCSS = require ('gulp-clean-css');
+const rename = require ('gulp-rename');
+const neat = require ('node-neat');
 
-gulp.task('sass', function() {
-  return gulp.src('public/styles/scss/main.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('public/styles'))
+// tasks
+gulp.task('sass', () => {
+  gulp.src('app/styles/sass/main.scss')
+    .pipe(sass({
+      includePaths: neat.includePaths
+    }).on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(cleanCSS({
+      compatibility: '*'
+    }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('app/styles/css'));
+});
+
+
+gulp.task('watch', () => {
+  gulp.watch('app/styles/sass/*.scss', ['sass']);
 });

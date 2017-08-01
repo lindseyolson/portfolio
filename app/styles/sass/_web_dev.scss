@@ -1,0 +1,70 @@
+.project {
+  margin-top: 2em;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 1.25em;
+  border-radius: 10px;
+}
+
+#projects {
+  // @include grid-container;
+  @include grid-column(12);
+  // @include grid-collapse;
+  // background: #efefef;
+  margin-top: 5em;
+  border-top: solid #999999 0.25px;
+  padding-bottom: 10em;
+
+  #flora {
+    @extend .project;
+    @include grid-column(3);
+    @include grid-push(1);
+    background-color: #49AB7A;
+    font-family: 'Zilla Slab', serif;
+    color: white;
+  }
+
+  #praeco {
+    @extend .project;
+    @include grid-column(3);
+    background-color: #49AB7A;
+    font-family: 'Zilla Slab', serif;
+    color: white;
+  }
+}
+
+// #projects {
+//   @include grid-column(12);
+//   background: #cccccc;
+//
+//   #flora {
+//     @extend .project;
+//     @include grid-column(3);
+//     @include grid-push(1);
+//     background-color: #49AB7A;
+//     font-family: 'Zilla Slab', serif;
+//     color: white;
+//   }
+//
+//   #praeco {
+//     @extend .project;
+//     @include grid-column(3);
+//     background-color: #49AB7A;
+//     font-family: 'Zilla Slab', serif;
+//     color: white;
+//   }
+// }
+
+
+
+
+//
+// .contactLink {
+//   font-family: $primary-font;
+//   font-size: 18px;
+// }
+
+
+// .project-list {
+//   margin-top: 6em;
+// }

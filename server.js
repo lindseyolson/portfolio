@@ -12,7 +12,7 @@ var oauthToken = process.env.GIT_TOKEN || require('./githubauth').oauthToken;
 
 var port = process.env.PORT || 1616;
 
-app.use(express.static('public'));
+app.use(express.static('app'));
 
 var project_options = {
   url: 'https://api.github.com/users/' + username,
@@ -53,7 +53,7 @@ app.get('/repos', function(req, res){
 });
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public/views/index.html'));
+  res.sendFile(path.join(__dirname, 'app/views/index.html'));
 });
 
 app.listen(port, function() {

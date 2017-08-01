@@ -4,26 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <!-- vendors -->
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+    <!-- scripts -->
     <script src="scripts/client.js" charset="utf-8"></script>
     <script src="scripts/github.service.js" charset="utf-8"></script>
     <script src="scripts/githubauth.js" charset="utf-8"></script>
-    <!-- <link rel="stylesheet" href="vendors/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="styles/main.scss">
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/css/main.min.css">
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Palanquin:100" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
-
   </head>
-  <body ng-app="myApp">
-    <div id="navbar">
-      <ul>
-        <li><a href="#!">About Me</a></li>
-        <li><a href="#!/projects">Work</a></li>
-      </ul>
-    </div>
 
-    <ng-view></ng-view>
 
+
+
+  <body ng-app='myApp' class='grid-container'>
+
+    <header>
+      <!-- logo goes here -->
+      <p id='logo'>lindseyolson</p>
+    </header>
+
+    <nav>
+      <p id='homeLink'><a href="#!">home</a></p>
+      <p class='wack'>/</p>
+      <p id='webdevLink'><a href="#!/web_development">web development</a></p>
+      <p class='wack'>/</p>
+      <p id='artworkLink'><a href="#!/artwork">artwork</a></p>
+      <p class='wack'>/</p>
+      <p id='aboutLink'><a href="#!/about_me">about</a></p>
+    </nav>
+
+    <section>
+      <ng-view></ng-view>
+    </section>
+
+    <footer>
+      <!-- year goes here   -->
+    </footer>
   </body>
 </html>

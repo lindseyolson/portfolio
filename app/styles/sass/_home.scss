@@ -1,0 +1,8 @@
+#intro {
+  margin-top: 4em;
+  @include grid-column(8);
+  @include grid-push(2);
+  font-family: $primary-font;
+  font-size: 48px;
+  text-align: center;
+  }

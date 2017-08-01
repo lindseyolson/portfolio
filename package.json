@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -15,10 +15,15 @@
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
     "express": "^4.15.3",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-rename": "^1.2.2",
     "request": "^2.81.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "node-neat": "^2.0.0-beta.0"
   }
 }

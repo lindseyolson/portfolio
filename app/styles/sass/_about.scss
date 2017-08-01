@@ -1,0 +1,5 @@
+#headshot {
+@include grid-column(2.5);
+@include grid-push(1);
+border-radius: 50%;
+}

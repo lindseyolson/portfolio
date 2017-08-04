@@ -16,7 +16,11 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Palanquin:100" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Maven+Pro|Open+Sans|Quattrocento+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Carrois+Gothic+SC|Cutive+Mono|Josefin+Sans|Raleway|Varela|Work+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">  </head>
 
 
 
@@ -25,22 +29,19 @@
 
     <header>
       <!-- logo goes here -->
-      <p id='logo'>lindseyolson</p>
+      <p id='homeLink'><a href="#!">LINDSEYOLSON</a></p>
     </header>
 
     <nav>
-      <p id='homeLink'><a href="#!">home</a></p>
-      <p class='wack'>/</p>
-      <p id='webdevLink'><a href="#!/web_development">web development</a></p>
-      <p class='wack'>/</p>
-      <p id='artworkLink'><a href="#!/artwork">artwork</a></p>
-      <p class='wack'>/</p>
-      <p id='aboutLink'><a href="#!/about_me">about</a></p>
+      <a href="#!/web_development" id='webdevLink'>WEB DEVELOPMENT</a>
+      <a href="#!/artwork" id='artworkLink'>ARTWORK</a>
+      <a href="#!/about" id='aboutLink'>ABOUT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </nav>
 
-    <section>
+
       <ng-view></ng-view>
-    </section>
+
 
     <footer>
       <!-- year goes here   -->

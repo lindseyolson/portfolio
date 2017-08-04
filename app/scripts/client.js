@@ -4,8 +4,17 @@ myApp.config(function($routeProvider){
   $routeProvider.when('/', {
     templateUrl: 'views/partials/home.html',
     controller: 'ProfileController as pc'
-  }).when('/projects', {
+  }).when('/about', {
     templateUrl: 'views/partials/about_me.html',
+    controller: 'ProjectsPageController as ppc'
+  }).when('/web_dev', {
+    templateUrl: 'views/partials/web_dev.html',
+    controller: 'ProjectsPageController as ppc'
+  }).when('/artwork', {
+    templateUrl: 'views/partials/artwork.html',
+    controller: 'ProjectsPageController as ppc'
+  }).when('/home', {
+    templateUrl: 'views/partials/home.html',
     controller: 'ProjectsPageController as ppc'
   }); // end route provider
 }); // end app config

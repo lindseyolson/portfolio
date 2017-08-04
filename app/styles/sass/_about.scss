@@ -1,5 +1,8 @@
-#headshot {
-@include grid-column(2.5);
-@include grid-push(1);
-border-radius: 50%;
+.about {
+  #headshot {
+  @include grid-column(2.5);
+  @include grid-push(1);
+  border-radius: 50%;
+  margin-top: 5em;
+  }
 }

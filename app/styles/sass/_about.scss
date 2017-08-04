@@ -1,8 +1,10 @@
 .about {
   #headshot {
-  @include grid-column(2.5);
-  @include grid-push(1);
+  @include grid-column(1);
   border-radius: 50%;
   margin-top: 5em;
+  @include grid-media($neat-grid-tablet-up) {
+    @include grid-column(2.5);
+    }
   }
 }

@@ -1,10 +1,9 @@
-## Portfolio using the GitHub API
+## Portfolio
 
-https://portfolio-github-api.herokuapp.com/#!/
+In the process of creating my portfolio webpage. 
 
-- Simple server set up
-- Angular with multiple views, controllers, and a service
-- Hosting on Heroku 
+Technologies I am using: AngularJS, HTML5, CSS3, Sass, Gulp.js, Neat Grid 2.0
+- Using GitHub API to link to projects
 
 ###### 6/26/2017
 

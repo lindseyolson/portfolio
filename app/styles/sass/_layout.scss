@@ -1,14 +1,13 @@
 .grid-container {
   @include grid-container;
+  @include grid-visual(yellow, $neat-grid-laptop-up);
 }
 
 header {
   img {
     @include grid-column(1);
-    @include grid-media($neat-grid-tablet-up) {
-      @include grid-column(2.5);
-      @include grid-push(1.25);
-      margin-top: -1em;
+    @include grid-media($neat-grid-laptop-up) {
+      @include grid-column(0.75);
     }
   }
 }
@@ -24,24 +23,24 @@ header {
 
     #webdevLink {
       @include grid-column(2);
-      @include grid-media($neat-grid-tablet-up) {
-        @include grid-column(0.75);
-        @include grid-push(6);
+      @include grid-media($neat-grid-laptop-up) {
+        @include grid-column(0.25);
+        @include grid-push(1.85);
       }
 
     }
     #artworkLink {
       @include grid-column(1.75);
-      @include grid-media($neat-grid-tablet-up) {
-        @include grid-column(1.25);
+      @include grid-media($neat-grid-laptop-up) {
+        @include grid-column(0.25);
         // @include grid-push(0.75);
       }
     }
     #aboutLink {
       @include grid-column(1);
-      @include grid-media($neat-grid-tablet-up) {
-        @include grid-column(1.25);
-        // @include grid-push(0.75);
+      @include grid-media($neat-grid-laptop-up) {
+        @include grid-column(0.25);
+        @include grid-push(0.10);
       }
     }
     a {

@@ -19,13 +19,23 @@ $primary-font: 'Montserrat', sans-serif;
 
 // font-family: 'Montserrat', sans-serif;
 
+
+// smart phones
 $neat-grid: (
   columns: 1,
   gutter: 10px,
 );
 
+// tablets
 $neat-grid-tablet-up: (
-  columns: 12,
+  columns: 2,
   gutter: 20px,
   media: "(min-width: 768px)",
+);
+
+// laptops & desktops
+$neat-grid-laptop-up: (
+  columns: 3,
+  gutter: 15px,
+  media: "(min-width: 1224px)",
 );

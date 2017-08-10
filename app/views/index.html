@@ -10,7 +10,6 @@
     <!-- scripts -->
     <script src="scripts/client.js" charset="utf-8"></script>
     <script src="scripts/github.service.js" charset="utf-8"></script>
-    <script src="scripts/githubauth.js" charset="utf-8"></script>
     <!-- styles -->
     <link rel="stylesheet" href="styles/css/main.min.css">
     <!-- fonts -->
@@ -25,19 +24,17 @@
 
 
 
-  <body ng-app='myApp' class='grid-container'>
+  <body ng-app='myApp'>
 
-    <header>
-      <!-- logo goes here -->
-      <p id='homeLink'><a href="#!">LINDSEYOLSON</a></p>
+    <header class='grid-container'>
+      <a href='#!'><img src='../images/logo_black.png' alt="lindsey olson logo"/></a>
+      <nav>
+        <a href="#!/web_development" id='webdevLink'>WEB</a>
+        <a href="#!/artwork" id='artworkLink'>ARTWORK</a>
+        <a href="#!/about" id='aboutLink'>ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </nav>
     </header>
-
-    <nav>
-      <a href="#!/web_development" id='webdevLink'>WEB</a>
-      <a href="#!/artwork" id='artworkLink'>ARTWORK</a>
-      <a href="#!/about" id='aboutLink'>ABOUT</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </nav>
 
 
       <ng-view></ng-view>

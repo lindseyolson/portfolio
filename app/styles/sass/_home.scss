@@ -1,10 +1,14 @@
-#intro {
-  margin-top: 4em;
-  @include grid-column(1);
-  font-family: $primary-font;
-  font-size: 48px;
-  text-align: center;
-  @include grid-media($neat-grid-tablet-up) {
-    @include grid-column(8);
+#homePage {
+  @include grid-container;
+  #intro {
+    margin-top: 3em;
+    @include grid-column(1);
+    font-family: $primary-font;
+    font-size: 48px;
+    text-align: center;
+    @include grid-media($neat-grid-tablet-up) {
+      @include grid-column(8);
+      @include grid-shift(2);
+      }
     }
-  }
+}

@@ -2,16 +2,16 @@
   @include grid-container;
 }
 
-  header {
+header {
+  img {
     @include grid-column(1);
-    font-size: 16px;
-    font-family: $primary-font;
-    font-weight: 200;
     @include grid-media($neat-grid-tablet-up) {
-      @include grid-column(1);
-      @include grid-push(0.75);
+      @include grid-column(2.5);
+      @include grid-push(1.25);
+      margin-top: -1em;
     }
   }
+}
 
   nav {
     font-size: 16px;
@@ -21,11 +21,12 @@
     font-weight: 200;
     overflow: hidden;
 
+
     #webdevLink {
       @include grid-column(2);
       @include grid-media($neat-grid-tablet-up) {
         @include grid-column(0.75);
-        @include grid-push(6.25);
+        @include grid-push(6);
       }
 
     }

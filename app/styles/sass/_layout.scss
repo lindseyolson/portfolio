@@ -1,44 +1,72 @@
 .grid-container {
   @include grid-container;
-  @include grid-visual(yellow, $neat-grid-laptop-up);
+  // @include grid-visual(yellow, $medium);
 }
 
 header {
   img {
     @include grid-column(1);
-    @include grid-media($neat-grid-laptop-up) {
+    @include grid-column(0.8);
+    @include grid-push(0.1);
+    @include grid-media($tablet) {
+      margin-top: -1.5em;
       @include grid-column(0.75);
+      @include grid-push(0.25);
+    }
+    @include grid-media($medium) {
+      margin-top: -1.25em;
+      @include grid-column(1);
+      @include grid-push(0.5);
     }
   }
 }
 
   nav {
-    font-size: 16px;
     font-family: $primary-font;
-    margin-top: 3em;
     color: black;
     font-weight: 200;
     overflow: hidden;
-
+    @include grid-media($tablet) {
+      margin-top: 3em;
+      // margin-bottom: -1em;
+    }
+    @include grid-media($medium) {
+      margin-top: 4em;
+    }
 
     #webdevLink {
       @include grid-column(2);
-      @include grid-media($neat-grid-laptop-up) {
+      font-size: 13px;
+      @include grid-media($tablet) {
+        @include grid-column(0.15);
+        @include grid-push(1);
+      }
+      @include grid-media($medium) {
         @include grid-column(0.25);
-        @include grid-push(1.85);
+        @include grid-push(1.65);
       }
 
     }
     #artworkLink {
       @include grid-column(1.75);
-      @include grid-media($neat-grid-laptop-up) {
+      font-size: 13px;
+      @include grid-media($tablet) {
+        @include grid-column(0.22);
+        // @include grid-push(1);
+      }
+      @include grid-media($medium) {
         @include grid-column(0.25);
         // @include grid-push(0.75);
       }
     }
     #aboutLink {
       @include grid-column(1);
-      @include grid-media($neat-grid-laptop-up) {
+      font-size: 13px;
+      @include grid-media($tablet) {
+        @include grid-column(0.25);
+        @include grid-push(0.08);
+      }
+      @include grid-media($medium) {
         @include grid-column(0.25);
         @include grid-push(0.10);
       }

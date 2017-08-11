@@ -6,7 +6,7 @@
     font-family: $primary-font;
     font-size: 48px;
     text-align: center;
-    @include grid-media($neat-grid-tablet-up) {
+    @include grid-media($medium) {
       @include grid-column(8);
       @include grid-shift(2);
       }

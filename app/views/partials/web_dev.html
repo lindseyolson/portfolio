@@ -1,12 +1,91 @@
-<div id="projects">
-  <div id='flora'>
-    <p>flora</p>
-  </div>
+<section class='webdev'>
 
-  <div id='praeco'>
-    <p>preaco</p>
-  </div>
-</div>
+<!-- portfolio -->
+  <article ng-show='pc.showPortfolio' class='project-description' id='portfolio-description'>
+    <img class='project-photo' src='../../images/projects/lindseyolson/portfolio-1.png' alt='website mock up in cell phone'>
+    <p>I created this responsive portfolio site with the following technologies: HTML5, CSS3, Angular, JavaScript, jQuery, Gulp.js, Sass and Neat Grid 2.0.</p>
+    <p>Please click around to check it out and please let me know if you have any questions.</p>
+    <p>Click <a href='https://github.com/lindseyolson/portfolio.git'>here</a> to see the code on GitHub.</p>
+  </article>
+
+<!-- flora -->
+  <article ng-show='pc.showFlora' class='project-description' id='flora-description'>
+    <img id='flora-1' class='project-photo' src='../../images/projects/flora/login_screen.png' alt='website mock up'>
+    <img id='flora-2' class='project-photo' src='../../images/projects/flora/garden_screen.png' alt='website mock up'>
+
+    <p>I created this responsive portfolio site with the following technologies: HTML5, CSS3, Angular, JavaScript, jQuery, Gulp.js, Sass and Neat Grid 2.0.</br>
+    <a href='https://flora-garden-app.herokuapp.com/'>See the app live.</a></br>
+    Click <a href='https://github.com/lindseyolson/flora.git'>here</a> to see the code on GitHub.</p>
+
+    <img id='flora-3' class='project-photo' src='../../images/projects/flora/search_screen.png' alt='website mock up'>
+    <img id='flora-4' class='project-photo' src='../../images/projects/flora/upload_photo.png' alt='website mock up'>
+  </article>
+
+<!-- praeco -->
+  <article ng-show='pc.showPraeco' class='project-description' id='praeco-description'>
+    <img id='praeco-1' class='project-photo' src='../../images/projects/praeco/login-screen.png' alt='website mock up'>
+    <img id='praeco-2' class='project-photo' src='../../images/projects/praeco/device-screen.png' alt='website mock up'>
+
+    <p>I created this responsive portfolio site with the following technologies: HTML5, CSS3, Angular, JavaScript, jQuery, Gulp.js, Sass and Neat Grid 2.0.</br>
+    <a href='https://flora-garden-app.herokuapp.com/'>See the app live.</a></br>
+    Click <a href='https://github.com/lindseyolson/flora.git'>here</a> to see the code on GitHub.</p>
+
+    <img id='praeco-3' class='project-photo' src='../../images/projects/praeco/editprofile-screen.png' alt='website mock up'>
+    <img id='praeco-4' class='project-photo' src='../../images/projects/praeco/contact-screen.png' alt='website mock up'>
+  </article>
+
+<!-- to do -->
+  <article ng-show='pc.showTodo' class='project-description' id='todo-list-description'>
+    <img class='project-photo' src='../../images/projects/todo-list/todo-1.jpg' alt='website mock up'>
+    <p>I created this responsive portfolio site with the following technologies: HTML5, CSS3, Angular, JavaScript, jQuery, Gulp.js, Sass and Neat Grid 2.0.</p>
+    <p>Please click around to check it out and please let me know if you have any questions.</p>
+    <p>Click <a href='https://github.com/lindseyolson/to-do-app.git'>here</a> to see the code on GitHub.</p>
+  </article>
+
+<!-- blocks -->
+  <article ng-show='pc.showBlocks' class='project-description' id='blocks-description'>
+    <img class='project-photo' src='../../images/projects/blocks/blocks-1.jpg' alt='website mock up'>
+    <p>I created this responsive portfolio site with the following technologies: HTML5, CSS3, Angular, JavaScript, jQuery, Gulp.js, Sass and Neat Grid 2.0.</p>
+    <p>Please click around to check it out and please let me know if you have any questions.</p>
+    <p>Click <a href='https://github.com/lindseyolson/jQuery-blocks.git'>here</a> to see the code on GitHub.</p>
+  </article>
+
+<!-- gallery -->
+  <article ng-show='pc.showGallery' class='project-description' id='gallery-description'>
+    <img id='gallery-1' class='project-photo' src='../../images/projects/gallery/gallery-2.jpg' alt='website mock up'>
+    <p>I created this responsive portfolio site with the following technologies: HTML5, CSS3, Angular, JavaScript, jQuery, Gulp.js, Sass and Neat Grid 2.0.</br>
+    <a href='https://flora-garden-app.herokuapp.com/'>See the app live.</a></br>
+    Click <a href='https://github.com/lindseyolson/flora.git'>here</a> to see the code on GitHub.</p>
+    <img id='gallery-2' class='project-photo' src='../../images/projects/gallery/gallery-1.jpg' alt='website mock up'>
+
+  </article>
+
+  <article>
+    <img ng-click='pc.showPortfolio = !pc.showPortfolio' class='project-thumbnails' id='portfolioTN' src='../../images/projects/lindseyolson/lindseyolson-cover.png' alt='screen shot of portfolio website'>
+  </article>
+
+  <article>
+    <img ng-click='pc.showFlora = !pc.showFlora' class='project-thumbnails' id='floraTN' src='../../images/projects/flora/flora-cover.png' alt='screen shot of flora website'>
+  </article>
+
+  <article>
+    <img ng-click='pc.showPraeco = !pc.showPraeco' class='project-thumbnails' id='praecoTN' src='../../images/projects/praeco/praeco-cover.png' alt='screen shot of praeco website'>
+  </article>
+
+  <article>
+    <img ng-click='pc.showTodo = !pc.showTodo' class='project-thumbnails' id='todo-listTN' src='../../images/projects/todo-list/todo-cover.png' alt='screen shot of to do list app'>
+  </article>
+
+  <article>
+    <img ng-click='pc.showBlocks = !pc.showBlocks' class='project-thumbnails' id='blocksTN' src='../../images/projects/blocks/blocks-cover.png' alt='screen shot of blocks app game'>
+  </article>
+
+  <article>
+    <img ng-click='pc.showGallery = !pc.showGallery' class='project-thumbnails' id='galleryTN' src='../../images/projects/gallery/gallery-cover.png' alt='screen shot of lindseys gallery'>
+  </article>
+
+</section>
+
 
 
 <!-- <ul class='project-list'>

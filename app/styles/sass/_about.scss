@@ -1,10 +1,12 @@
 .about {
   #headshot {
   @include grid-column(1);
+  @include grid-push(0.5);
   border-radius: 50%;
   margin-top: 5em;
-  @include grid-media($medium) {
-    @include grid-column(2.5);
+  @include grid-media($mobile) {
+    @include grid-column(0.5);
+    @include grid-push(0.25);
     }
   }
 }

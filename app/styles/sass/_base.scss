@@ -19,23 +19,25 @@ $primary-font: 'Montserrat', sans-serif;
 
 // font-family: 'Montserrat', sans-serif;
 
-// mobile
+
+
+// medium screens
 $neat-grid: (
-  columns: 1,
-  gutter: 10px,
-  // media: 'only screen and (max-width: 699px)'
+  columns: 4,
+  gutter: 15px,
+  media: 'only screen and (min-width: 1000px)'
 );
 
 // tablet
 $tablet: (
   columns: 2.5,
   gutter: 10px,
-  media: 'only screen and (min-width: 700px) and (max-width: 999px)'
+  media: 'only screen and (min-width: 600px) and (max-width: 999px)'
 );
 
-// laptops & desktops
-$medium: (
-  columns: 4,
-  gutter: 15px,
-  media: 'only screen and (min-width: 1000px)'
+// mobile
+$mobile: (
+  columns: 1,
+  gutter: 10px,
+  media: 'only screen and (max-width: 599.9px)'
 );

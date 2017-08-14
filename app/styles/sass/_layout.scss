@@ -1,98 +1,194 @@
 .grid-container {
   @include grid-container;
-  // @include grid-visual(yellow, $medium);
+  // @include grid-visual(yellow, $neat-grid);
 }
 
 header {
   img {
-    @include grid-column(1);
-    @include grid-column(0.8);
-    @include grid-push(0.1);
+    @include grid-media($neat-grid) {
+      margin-top: -4%;
+      @include grid-column(1);
+      @include grid-push(0.5);
+    }
     @include grid-media($tablet) {
-      margin-top: -1.5em;
+      margin-top: -5%;
       @include grid-column(0.75);
       @include grid-push(0.25);
     }
-    @include grid-media($medium) {
-      margin-top: -1.25em;
-      @include grid-column(1);
-      @include grid-push(0.5);
+    @include grid-media($mobile) {
+      @include grid-column(0.6);
+    }
+  }
+
+  .nav {
+    font-family: $primary-font;
+    color: black;
+    font-weight: 200;
+    @include grid-media($neat-grid) {
+      margin-top: 5%;
+    }
+
+    @include grid-media($tablet) {
+      margin-top: 8%;
+    }
+
+    @include grid-media($mobile) {
+      overflow: hidden;
+      position: fixed;
+      background: black;
+      right: 0%;
+      top: 0%;
+      opacity: 0.8;
+      height: 100vh;
+    }
+
+    ul {
+      list-style: none;
+
+
+      @include grid-media($mobile) {
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+
+        #webdevLink {
+          @include grid-media($neat-grid) {
+            @include grid-column(0.25);
+            @include grid-push(1.25);
+          }
+          @include grid-media($tablet) {
+            @include grid-column(0.15);
+            @include grid-push(0.5);
+          }
+        }
+
+        #artworkLink {
+         @include grid-media($neat-grid) {
+           @include grid-column(0.25);
+         }
+         @include grid-media($tablet) {
+           @include grid-column(0.31);
+           @include grid-push(0.09);
+         }
+        }
+
+        #aboutLink {
+         @include grid-media($neat-grid) {
+           @include grid-column(0.25);
+           @include grid-push(0.10);
+         }
+         @include grid-media($tablet) {
+           @include grid-column(0.25);
+           @include grid-push(0.05);
+         }
+        }
+
+
+        a {
+          text-decoration: none;
+          font-size: 15px;
+
+          @include grid-media($mobile) {
+            color: white;
+            display: block;
+            padding: 2em 6em;
+            opacity: 0.7;
+            text-align: center;
+          }
+        }
+
+        a:hover {
+          @include grid-media($mobile) {
+            color: black;
+            background-color: white;
+          }
+        }
+
+        a:focus {
+          @include grid-media($mobile) {
+            color: black;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-hide {
+    @include grid-media($mobile) {
+      width: 0;
+      overflow: hidden;
+    }
+  }
+
+}
+
+.menu-toggle-open {
+  @include grid-media($mobile) {
+    background: white;
+    padding: 5%;
+    position: absolute;
+    right: 0.5em;
+    top: 1.5em;
+    cursor: pointer;
+  }
+
+  .hamburger-1,
+  .hamburger-2,
+  .hamburger-3 {
+    @include grid-media($mobile) {
+      width: 1.25em;
+      border-bottom: 1.75px solid black;
+      border-radius: 3px;
+    }
+
+    @include grid-media($tablet) {
+      @include grid-column(0);
+    }
+
+  }
+  .hamburger-2 {
+    @include grid-media($mobile) {
+      transform: translateY(-7.5px);
+    }
+    // background: black;
+  }
+  .hamburger-3 {
+    @include grid-media($mobile) {
+      transform: translateY(1.5px);
     }
   }
 }
 
-  nav {
-    font-family: $primary-font;
-    color: black;
-    font-weight: 200;
-    overflow: hidden;
-    @include grid-media($tablet) {
-      margin-top: 3em;
-      // margin-bottom: -1em;
-    }
-    @include grid-media($medium) {
-      margin-top: 4em;
-    }
+.menu-toggle-close {
+  @include grid-media($mobile) {
+    cursor: pointer;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
 
-    #webdevLink {
-      @include grid-column(2);
-      font-size: 13px;
-      @include grid-media($tablet) {
-        @include grid-column(0.15);
-        @include grid-push(1);
-      }
-      @include grid-media($medium) {
-        @include grid-column(0.25);
-        @include grid-push(1.65);
-      }
-
-    }
-    #artworkLink {
-      @include grid-column(1.75);
-      font-size: 13px;
-      @include grid-media($tablet) {
-        @include grid-column(0.22);
-        // @include grid-push(1);
-      }
-      @include grid-media($medium) {
-        @include grid-column(0.25);
-        // @include grid-push(0.75);
-      }
-    }
-    #aboutLink {
-      @include grid-column(1);
-      font-size: 13px;
-      @include grid-media($tablet) {
-        @include grid-column(0.25);
-        @include grid-push(0.08);
-      }
-      @include grid-media($medium) {
-        @include grid-column(0.25);
-        @include grid-push(0.10);
-      }
-    }
-    a {
-      float: left;
+  .close,
+  .close::before {
+    @include grid-media($mobile) {
+      content: '';
       display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-    a:link {
-      color: #626263;
-    }
-    a:visited {
-      color: #626263;
-    }
-    a:hover {
-      color: gray;
-    }
-    a:active {
-      color: white;
-    }
-    .icon {
-        display: none;
+      background: white;
+      height: 2px;
+      width: 1em;
+      border-radius: 3px;
     }
   }
+  .close {
+    @include grid-media($mobile) {
+      transform: rotate(45deg);
+    }
+  }
+  .close::before {
+    @include grid-media($mobile) {
+      transform: rotate(-90deg);
+    }
+  }
+}

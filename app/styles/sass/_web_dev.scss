@@ -1,70 +1,249 @@
-.project {
-  margin-top: 2em;
-  font-size: 36px;
-  text-align: center;
-  padding-top: 1.25em;
-  border-radius: 10px;
-}
+.webdev {
+  @include grid-container;
+  // @include grid-visual(yellow, $neat-grid);
 
-#projects {
-  // @include grid-container;
-  @include grid-column(12);
-  // @include grid-collapse;
-  // background: #efefef;
-  margin-top: 5em;
-  border-top: solid #999999 0.25px;
-  padding-bottom: 10em;
-
-  #flora {
-    @extend .project;
-    @include grid-column(3);
-    @include grid-push(1);
-    background-color: #49AB7A;
-    font-family: 'Zilla Slab', serif;
-    color: white;
+  .project-description {
+    @include grid-container;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-family: $primary-font;
   }
 
-  #praeco {
-    @extend .project;
-    @include grid-column(3);
-    background-color: #49AB7A;
-    font-family: 'Zilla Slab', serif;
-    color: white;
+  #portfolio-description {
+    p {
+      @include grid-media($neat-grid) {
+        @include grid-column(1.5);
+        @include grid-push(1);
+      }
+      @include grid-media($tablet) {
+        @include grid-column(1);
+        @include grid-push(0.15);
+      }
+      @include grid-media($mobile) {
+        @include grid-column(1);
+      }
+    }
+    .project-photo {
+      @include grid-media($neat-grid) {
+        @include grid-column(0.75);
+        @include grid-shift(1);
+      }
+      @include grid-media($tablet) {
+        @include grid-column(0.5);
+        @include grid-push(0.5);
+      }
+      @include grid-media($mobile) {
+        @include grid-column(0.6);
+        @include grid-push(0.2);
+      }
+    }
+  }
+
+    #flora-description {
+      p {
+        @include grid-media($neat-grid) {
+          @include grid-column(1.5);
+          height: 200px;
+          @include grid-push(0.5);
+        }
+        @include grid-media($tablet) {
+          @include grid-column(1);
+          @include grid-push(0.25);
+          height: 200px;
+        }
+        @include grid-media($mobile) {
+          @include grid-column(1);
+          @include grid-shift(1);
+          // @include grid-push(-1);
+
+          margin-top: 60%;
+          // margin-left: -40%;
+        }
+      }
+      .project-photo {
+        @include grid-media($neat-grid) {
+          @include grid-column(0.75);
+          @include grid-shift(0.5);
+        }
+        @include grid-media($tablet) {
+          @include grid-column(0.5);
+          @include grid-shift(0.25);
+        }
+        @include grid-media($mobile) {
+          @include grid-column(0.5);
+          // @include grid-push(0.2);
+        }
+      }
+
+      #flora-3, #flora-4 {
+        @include grid-media($neat-grid) {
+          @include grid-shift(-1);
+          margin-top: 23%;
+        }
+        @include grid-media($tablet) {
+          @include grid-shift(-0.75);
+          // @include grid-shift(0.25);
+          margin-top: 13%;
+        }
+        @include grid-media($mobile) {
+          margin-top: -35%;
+          // @include grid-shift(1);
+          // @include grid-push(0.2);
+        }
+      }
+    }
+
+    #praeco-description {
+      p {
+        @include grid-media($neat-grid) {
+          @include grid-column(1.5);
+          height: 200px;
+          @include grid-push(0.5);
+        }
+        @include grid-media($tablet) {
+          @include grid-column(1);
+          @include grid-push(0.25);
+          height: 200px;
+
+        }
+      }
+      .project-photo {
+        @include grid-media($neat-grid) {
+          @include grid-column(0.75);
+          @include grid-shift(0.5);
+        }
+        @include grid-media($tablet) {
+          @include grid-column(0.5);
+          @include grid-shift(0.25);
+
+        }
+      }
+
+      #praeco-3, #praeco-4 {
+        @include grid-media($neat-grid) {
+          @include grid-shift(-1);
+          margin-top: 23%;
+        }
+        @include grid-media($tablet) {
+          @include grid-shift(-0.75);
+          // @include grid-shift(0.25);
+          margin-top: 13%;
+        }
+      }
+    }
+
+    #todo-list-description, #blocks-description {
+      p {
+        @include grid-media($neat-grid) {
+          @include grid-column(1.5);
+          @include grid-push(0.55);
+        }
+        @include grid-media($tablet) {
+          @include grid-column(1);
+        }
+      }
+      .project-photo {
+        border: 1px solid #c6c6c6;
+
+        @include grid-media($neat-grid) {
+          @include grid-column(1.5);
+          @include grid-shift(0.5);
+        }
+        @include grid-media($tablet) {
+          @include grid-column(1);
+          @include grid-push(0.25);
+        }
+      }
+    }
+
+    #gallery-description {
+      p {
+        @include grid-media($neat-grid) {
+          @include grid-column(1.5);
+          @include grid-push(0.55);
+        }
+        @include grid-media($tablet) {
+          @include grid-column(1);
+        }
+      }
+      #gallery-1 {
+        border: 1px solid #c6c6c6;
+        @include grid-media($neat-grid) {
+          @include grid-column(1.5);
+          @include grid-shift(0.5);
+        }
+        @include grid-media($tablet) {
+          @include grid-column(1);
+          @include grid-push(0.25);
+        }
+      }
+      #gallery-2 {
+        @include grid-media($neat-grid) {
+          @include grid-column(0.75);
+          @include grid-shift(-0.35);
+          margin-top: 20%;
+        }
+        @include grid-media($tablet) {
+          @include grid-column(0.5);
+          @include grid-shift(-0.65);
+          margin-top: 18%;
+        }
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+  .project-thumbnails {
+    border: 1px solid #c6c6c6;
+    margin-bottom: 1em;
+
+    @include grid-media($neat-grid) {
+      @include grid-column(1);
+    }
+    @include grid-media($tablet) {
+      @include grid-column(1);
+      @include grid-shift(0.25);
+    }
+    @include grid-media($mobile) {
+      @include grid-column(1);
+    }
+  }
+
+  .project-thumbnails:hover {
+    opacity: 0.3;
+  }
+
+  #portfolioTN {
+    @include grid-container;
+    @include grid-media($neat-grid) {
+      @include grid-push(0.5);
+      margin-top: 2em;
+    }
+  }
+
+  #floraTN {
+    @include grid-media($neat-grid) {
+      margin-top: 2em;
+    }
+  }
+
+  #praecoTN {
+    @include grid-media($neat-grid) {
+      margin-top: 2em;
+    }
+  }
+
+  #todo-listTN {
+    @include grid-media($neat-grid) {
+      @include grid-container;
+      @include grid-push(0.5);
+    }
   }
 }
-
-// #projects {
-//   @include grid-column(12);
-//   background: #cccccc;
-//
-//   #flora {
-//     @extend .project;
-//     @include grid-column(3);
-//     @include grid-push(1);
-//     background-color: #49AB7A;
-//     font-family: 'Zilla Slab', serif;
-//     color: white;
-//   }
-//
-//   #praeco {
-//     @extend .project;
-//     @include grid-column(3);
-//     background-color: #49AB7A;
-//     font-family: 'Zilla Slab', serif;
-//     color: white;
-//   }
-// }
-
-
-
-
-//
-// .contactLink {
-//   font-family: $primary-font;
-//   font-size: 18px;
-// }
-
-
-// .project-list {
-//   margin-top: 6em;
-// }

@@ -1,6 +1,14 @@
 .webdev {
   @include grid-container;
   // @include grid-visual(yellow, $neat-grid);
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+
+  a:hover {
+    color: #dbdbdb;
+  }
 
   .project-description {
     @include grid-container;
@@ -9,47 +17,89 @@
     font-family: $primary-font;
   }
 
-  #portfolio-description {
-    p {
-      @include grid-media($neat-grid) {
-        @include grid-column(1.5);
-        @include grid-push(1);
-      }
-      @include grid-media($tablet) {
-        @include grid-column(1);
-        @include grid-push(0.15);
-      }
-      @include grid-media($mobile) {
-        @include grid-column(1);
-      }
-    }
-    .project-photo {
-      @include grid-media($neat-grid) {
-        @include grid-column(0.75);
-        @include grid-shift(1);
-      }
-      @include grid-media($tablet) {
-        @include grid-column(0.5);
-        @include grid-push(0.5);
-      }
-      @include grid-media($mobile) {
-        @include grid-column(0.6);
-        @include grid-push(0.2);
-      }
-    }
-  }
 
     #flora-description {
-      p {
+
+      .project-photo {
         @include grid-media($neat-grid) {
-          @include grid-column(1.5);
-          height: 200px;
-          @include grid-push(0.5);
+          @include grid-column(0.75);
+          @include grid-shift(0.5);
+        }
+        @include grid-media($tablet) {
+          @include grid-column(0.5);
+          @include grid-shift(0.25);
+        }
+        @include grid-media($mobile) {
+          @include grid-column(0.5);
+          margin-bottom: 2
+        }
+      }
+
+      .desc {
+        list-style: none;
+        @include grid-container;
+
+        @include grid-media($neat-grid) {
+          @include grid-column(1.45);
+          @include grid-shift(-1.82);
+            padding-top: 2em;
         }
         @include grid-media($tablet) {
           @include grid-column(1);
           @include grid-push(0.25);
-          height: 200px;
+        }
+        @include grid-media($mobile) {
+          @include grid-column(1);
+          // @include grid-shift(1);
+
+          margin-top: 60%;
+          // margin-left: -40%;
+        }
+        li {
+          padding-top: 15px;
+          text-align: justify;
+        }
+      }
+
+      .logo {
+        color: #49AB7A;
+        font-family: 'Zilla Slab', serif;
+        @include grid-media($neat-grid) {
+          font-size: 60px;
+          @include grid-column(1);
+          @include grid-shift(2.60);
+          margin-top: -16%;
+        }
+      }
+    }
+
+    #portfolio-description {
+      .project-photo {
+        @include grid-media($neat-grid) {
+          @include grid-column(0.75);
+          @include grid-push(1);
+        }
+        @include grid-media($tablet) {
+          @include grid-column(0.5);
+          @include grid-push(0.5);
+        }
+        @include grid-media($mobile) {
+          @include grid-column(0.6);
+          @include grid-push(0.2);
+        }
+      }
+      .desc {
+        list-style: none;
+        @include grid-container;
+
+        @include grid-media($neat-grid) {
+          @include grid-column(1);
+          // @include grid-push(0.25);
+          margin-top: 18%;;
+        }
+        @include grid-media($tablet) {
+          @include grid-column(1);
+          @include grid-push(0.15);
         }
         @include grid-media($mobile) {
           @include grid-column(1);
@@ -59,54 +109,14 @@
           margin-top: 60%;
           // margin-left: -40%;
         }
-      }
-      .project-photo {
-        @include grid-media($neat-grid) {
-          @include grid-column(0.75);
-          @include grid-shift(0.5);
-        }
-        @include grid-media($tablet) {
-          @include grid-column(0.5);
-          @include grid-shift(0.25);
-        }
-        @include grid-media($mobile) {
-          @include grid-column(0.5);
-          // @include grid-push(0.2);
-        }
-      }
-
-      #flora-3, #flora-4 {
-        @include grid-media($neat-grid) {
-          @include grid-shift(-1);
-          margin-top: 23%;
-        }
-        @include grid-media($tablet) {
-          @include grid-shift(-0.75);
-          // @include grid-shift(0.25);
-          margin-top: 13%;
-        }
-        @include grid-media($mobile) {
-          margin-top: -35%;
-          // @include grid-shift(1);
-          // @include grid-push(0.2);
+        li {
+          padding-top: 15px;
+          text-align: justify;
         }
       }
     }
 
     #praeco-description {
-      p {
-        @include grid-media($neat-grid) {
-          @include grid-column(1.5);
-          height: 200px;
-          @include grid-push(0.5);
-        }
-        @include grid-media($tablet) {
-          @include grid-column(1);
-          @include grid-push(0.25);
-          height: 200px;
-
-        }
-      }
       .project-photo {
         @include grid-media($neat-grid) {
           @include grid-column(0.75);
@@ -119,77 +129,163 @@
         }
       }
 
-      #praeco-3, #praeco-4 {
-        @include grid-media($neat-grid) {
-          @include grid-shift(-1);
-          margin-top: 23%;
-        }
-        @include grid-media($tablet) {
-          @include grid-shift(-0.75);
-          // @include grid-shift(0.25);
-          margin-top: 13%;
-        }
-      }
-    }
-
-    #todo-list-description, #blocks-description {
-      p {
-        @include grid-media($neat-grid) {
-          @include grid-column(1.5);
-          @include grid-push(0.55);
-        }
-        @include grid-media($tablet) {
-          @include grid-column(1);
-        }
-      }
-      .project-photo {
-        border: 1px solid #c6c6c6;
+      .desc {
+        list-style: none;
+        @include grid-container;
 
         @include grid-media($neat-grid) {
-          @include grid-column(1.5);
-          @include grid-shift(0.5);
+          @include grid-column(1.45);
+          @include grid-shift(0.42);
+            padding-top: 2em;
         }
         @include grid-media($tablet) {
           @include grid-column(1);
           @include grid-push(0.25);
+        }
+        @include grid-media($mobile) {
+          @include grid-column(1);
+          @include grid-shift(1);
+          // @include grid-push(-1);
+
+          margin-top: 60%;
+          // margin-left: -40%;
+        }
+        li {
+          padding-top: 15px;
+          text-align: justify;
         }
       }
     }
 
     #gallery-description {
-      p {
+      .project-photo {
         @include grid-media($neat-grid) {
-          @include grid-column(1.5);
-          @include grid-push(0.55);
+          @include grid-column(0.75);
+          @include grid-push(1);
+        }
+        @include grid-media($tablet) {
+          @include grid-column(0.5);
+          @include grid-push(0.5);
+        }
+        @include grid-media($mobile) {
+          @include grid-column(0.6);
+          @include grid-push(0.2);
+        }
+      }
+      .desc {
+        list-style: none;
+        @include grid-container;
+
+        @include grid-media($neat-grid) {
+          @include grid-column(1);
+          // @include grid-push(0.25);
+          margin-top: 16%;;
         }
         @include grid-media($tablet) {
           @include grid-column(1);
+          @include grid-push(0.15);
+        }
+        @include grid-media($mobile) {
+          @include grid-column(1);
+          @include grid-shift(1);
+          // @include grid-push(-1);
+
+          margin-top: 60%;
+          // margin-left: -40%;
+        }
+        li {
+          padding-top: 15px;
+          text-align: justify;
         }
       }
-      #gallery-1 {
+    }
+
+    #todo-list-description {
+      .project-photo {
         border: 1px solid #c6c6c6;
+
         @include grid-media($neat-grid) {
-          @include grid-column(1.5);
-          @include grid-shift(0.5);
+          @include grid-column(1);
+          @include grid-push(1);
+          // padding-top: 2em;
+        }
+        @include grid-media($tablet) {
+          @include grid-column(1);
+          // @include grid-push(0.25);
+        }
+        @include grid-media($mobile) {
+          @include grid-column(1);
+          // @include grid-shift(1);
+        }
+      }
+      .desc {
+        list-style: none;
+        @include grid-container;
+
+        @include grid-media($neat-grid) {
+          @include grid-column(0.85);
+            margin-top: 3%;
         }
         @include grid-media($tablet) {
           @include grid-column(1);
           @include grid-push(0.25);
         }
-      }
-      #gallery-2 {
-        @include grid-media($neat-grid) {
-          @include grid-column(0.75);
-          @include grid-shift(-0.35);
-          margin-top: 20%;
+        @include grid-media($mobile) {
+          @include grid-column(1);
+          @include grid-shift(1);
         }
-        @include grid-media($tablet) {
-          @include grid-column(0.5);
-          @include grid-shift(-0.65);
-          margin-top: 18%;
+        li {
+          padding-top: 15px;
+          text-align: justify;
         }
       }
     }
+
+    #blocks-description {
+      .project-photo {
+        border: 1px solid #c6c6c6;
+
+        @include grid-media($neat-grid) {
+          @include grid-column(1);
+          @include grid-push(1);
+          // padding-top: 2em;
+        }
+        @include grid-media($tablet) {
+          @include grid-column(1);
+          // @include grid-push(0.25);
+        }
+        @include grid-media($mobile) {
+          @include grid-column(1);
+          // @include grid-shift(1);
+        }
+      }
+      .desc {
+        list-style: none;
+        @include grid-container;
+
+        @include grid-media($neat-grid) {
+          @include grid-column(0.85);
+            margin-top: 9%;
+        }
+        @include grid-media($tablet) {
+          @include grid-column(1);
+          @include grid-push(0.25);
+        }
+        @include grid-media($mobile) {
+          @include grid-column(1);
+          @include grid-shift(1);
+        }
+        li {
+          padding-top: 15px;
+          text-align: justify;
+        }
+      }
+    }
+
+
+
+
+
 
 
 
@@ -213,6 +309,7 @@
     }
     @include grid-media($mobile) {
       @include grid-column(1);
+      margin-top: 1em;
     }
   }
 
@@ -220,16 +317,18 @@
     opacity: 0.3;
   }
 
-  #portfolioTN {
-    @include grid-container;
+  #floraTN {
     @include grid-media($neat-grid) {
       @include grid-push(0.5);
+
       margin-top: 2em;
     }
   }
 
-  #floraTN {
+  #portfolioTN {
+    @include grid-container;
     @include grid-media($neat-grid) {
+      // @include grid-push(0.5);
       margin-top: 2em;
     }
   }
@@ -240,7 +339,7 @@
     }
   }
 
-  #todo-listTN {
+  #galleryTN {
     @include grid-media($neat-grid) {
       @include grid-container;
       @include grid-push(0.5);

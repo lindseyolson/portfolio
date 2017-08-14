@@ -17,6 +17,7 @@ header {
     }
     @include grid-media($mobile) {
       @include grid-column(0.6);
+      // margin-top: 3%;
     }
   }
 
@@ -125,42 +126,64 @@ header {
 
 }
 
-.menu-toggle-open {
+
+.menu-toggle-open{
   @include grid-media($mobile) {
-    background: white;
-    padding: 5%;
+    // padding: 5%;
+    right: 5%;
+    top: 2%;
+    background: none;
     position: absolute;
-    right: 0.5em;
-    top: 1.5em;
+    line-height: 45px;
+    padding: 5px 15px 0px 15px;
+    color: black;
+    border: 0;
+    font-size: 1.5em;
+    font-weight: bold;
     cursor: pointer;
-  }
-
-  .hamburger-1,
-  .hamburger-2,
-  .hamburger-3 {
-    @include grid-media($mobile) {
-      width: 1.25em;
-      border-bottom: 1.75px solid black;
-      border-radius: 3px;
-    }
-
-    @include grid-media($tablet) {
-      @include grid-column(0);
-    }
-
-  }
-  .hamburger-2 {
-    @include grid-media($mobile) {
-      transform: translateY(-7.5px);
-    }
-    // background: black;
-  }
-  .hamburger-3 {
-    @include grid-media($mobile) {
-      transform: translateY(1.5px);
-    }
+    outline: none;
+    z-index: 10000000000000;
   }
 }
+
+
+
+// .menu-toggle-open {
+//   @include grid-media($mobile) {
+//     background: white;
+//     padding: 5%;
+//     position: absolute;
+//     right: 0.5em;
+//     top: 1.5em;
+//     cursor: pointer;
+//   }
+//
+//   .hamburger-1,
+//   .hamburger-2,
+//   .hamburger-3 {
+//     @include grid-media($mobile) {
+//       width: 1.25em;
+//       border-bottom: 1.75px solid black;
+//       border-radius: 3px;
+//     }
+//
+//     @include grid-media($tablet) {
+//       @include grid-column(0);
+//     }
+//
+//   }
+//   .hamburger-2 {
+//     @include grid-media($mobile) {
+//       transform: translateY(-7.5px);
+//     }
+//     // background: black;
+//   }
+//   .hamburger-3 {
+//     @include grid-media($mobile) {
+//       transform: translateY(1.5px);
+//     }
+//   }
+// }
 
 .menu-toggle-close {
   @include grid-media($mobile) {

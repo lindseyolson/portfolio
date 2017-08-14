@@ -1,7 +1,7 @@
 <section class='webdev'>
 
 <!-- portfolio -->
-  <article ng-show='pc.showPortfolio' class='project-description' id='portfolio-description'>
+  <article ng-show='pc.showProject' class='project-description' id='portfolio-description'>
     <img class='project-photo' src='../../images/projects/lindseyolson/portfolio-1.png' alt='website mock up in cell phone'>
     <p>I created this responsive portfolio site with the following technologies: HTML5, CSS3, Angular, JavaScript, jQuery, Gulp.js, Sass and Neat Grid 2.0.</p>
     <p>Please click around to check it out and please let me know if you have any questions.</p>
@@ -61,7 +61,7 @@
   </article>
 
   <article>
-    <img ng-click='pc.showPortfolio = !pc.showPortfolio' class='project-thumbnails' id='portfolioTN' src='../../images/projects/lindseyolson/lindseyolson-cover.png' alt='screen shot of portfolio website'>
+    <img ng-click='pc.showIfClicked("vm.showProject")' class='project-thumbnails' id='portfolioTN' src='../../images/projects/lindseyolson/lindseyolson-cover.png' alt='screen shot of portfolio website'>
   </article>
 
   <article>

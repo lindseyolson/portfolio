@@ -19,19 +19,34 @@
 
 
     #flora-description {
-
       .project-photo {
         @include grid-media($neat-grid) {
           @include grid-column(0.75);
           @include grid-shift(0.5);
         }
         @include grid-media($tablet) {
+          margin-top: 0.5%;
           @include grid-column(0.5);
           @include grid-shift(0.25);
         }
         @include grid-media($mobile) {
+          @include grid-container;
           @include grid-column(0.5);
-          margin-bottom: 2
+          // margin-bottom: 2
+        }
+      }
+      #photo3 {
+        @include grid-media($mobile) {
+          @include grid-container;
+          @include grid-column(0.5);
+          @include grid-shift(-0.5);
+        }
+      }
+      #photo4 {
+        @include grid-media($mobile) {
+          @include grid-column(0.5);
+          @include grid-shift(0.5);
+          margin-top: -92.5%;
         }
       }
 
@@ -45,19 +60,15 @@
             padding-top: 2em;
         }
         @include grid-media($tablet) {
-          @include grid-column(1);
-          @include grid-push(0.25);
+          @include grid-column(2);
+          @include grid-push(0.15);
         }
         @include grid-media($mobile) {
           @include grid-column(1);
-          // @include grid-shift(1);
-
-          margin-top: 60%;
-          // margin-left: -40%;
+          @include grid-shift(-0.1);
         }
         li {
           padding-top: 15px;
-          text-align: justify;
         }
       }
 
@@ -70,6 +81,10 @@
           @include grid-shift(2.60);
           margin-top: -16%;
         }
+        @include grid-media($mobile) {
+          @include grid-column(1);
+          @include grid-shift(-1);
+        }
       }
     }
 
@@ -80,7 +95,7 @@
           @include grid-push(1);
         }
         @include grid-media($tablet) {
-          @include grid-column(0.5);
+          @include grid-column(0.6);
           @include grid-push(0.5);
         }
         @include grid-media($mobile) {
@@ -99,19 +114,17 @@
         }
         @include grid-media($tablet) {
           @include grid-column(1);
-          @include grid-push(0.15);
+          @include grid-push(-0.10);
+          margin-top: 10%;
         }
         @include grid-media($mobile) {
           @include grid-column(1);
-          @include grid-shift(1);
-          // @include grid-push(-1);
+          @include grid-push(-0.10);
 
-          margin-top: 60%;
-          // margin-left: -40%;
         }
         li {
           padding-top: 15px;
-          text-align: justify;
+          // text-align: justify;
         }
       }
     }
@@ -123,9 +136,28 @@
           @include grid-shift(0.5);
         }
         @include grid-media($tablet) {
+          margin-top: 0.5%;
           @include grid-column(0.5);
           @include grid-shift(0.25);
-
+        }
+        @include grid-media($mobile) {
+          @include grid-container;
+          @include grid-column(0.5);
+          // margin-bottom: 2
+        }
+      }
+      #praeco-3 {
+        @include grid-media($mobile) {
+          @include grid-container;
+          @include grid-column(0.5);
+          @include grid-shift(-0.5);
+        }
+      }
+      #praeco-4 {
+        @include grid-media($mobile) {
+          @include grid-column(0.5);
+          @include grid-shift(0.5);
+          margin-top: -92.5%;
         }
       }
 
@@ -139,20 +171,17 @@
             padding-top: 2em;
         }
         @include grid-media($tablet) {
-          @include grid-column(1);
-          @include grid-push(0.25);
+          @include grid-column(2);
+          @include grid-push(0.15);
         }
         @include grid-media($mobile) {
           @include grid-column(1);
-          @include grid-shift(1);
-          // @include grid-push(-1);
+          @include grid-shift(-0.1);
 
-          margin-top: 60%;
-          // margin-left: -40%;
         }
         li {
           padding-top: 15px;
-          text-align: justify;
+          // text-align: justify;
         }
       }
     }
@@ -164,7 +193,7 @@
           @include grid-push(1);
         }
         @include grid-media($tablet) {
-          @include grid-column(0.5);
+          @include grid-column(0.6);
           @include grid-push(0.5);
         }
         @include grid-media($mobile) {
@@ -183,19 +212,15 @@
         }
         @include grid-media($tablet) {
           @include grid-column(1);
-          @include grid-push(0.15);
+          @include grid-push(-0.10);
         }
         @include grid-media($mobile) {
           @include grid-column(1);
-          @include grid-shift(1);
-          // @include grid-push(-1);
-
-          margin-top: 60%;
-          // margin-left: -40%;
+          @include grid-push(-0.10);
         }
         li {
           padding-top: 15px;
-          text-align: justify;
+          // text-align: justify;
         }
       }
     }
@@ -207,15 +232,13 @@
         @include grid-media($neat-grid) {
           @include grid-column(1);
           @include grid-push(1);
-          // padding-top: 2em;
         }
         @include grid-media($tablet) {
           @include grid-column(1);
-          // @include grid-push(0.25);
+          @include grid-push(0.25);
         }
         @include grid-media($mobile) {
           @include grid-column(1);
-          // @include grid-shift(1);
         }
       }
       .desc {
@@ -227,16 +250,17 @@
             margin-top: 3%;
         }
         @include grid-media($tablet) {
-          @include grid-column(1);
-          @include grid-push(0.25);
+          @include grid-column(0.75);
+          @include grid-push(-0.10);
+
         }
         @include grid-media($mobile) {
           @include grid-column(1);
-          @include grid-shift(1);
+          @include grid-push(-0.10);
         }
         li {
           padding-top: 15px;
-          text-align: justify;
+          // text-align: justify;
         }
       }
     }
@@ -252,7 +276,7 @@
         }
         @include grid-media($tablet) {
           @include grid-column(1);
-          // @include grid-push(0.25);
+          @include grid-push(0.25);
         }
         @include grid-media($mobile) {
           @include grid-column(1);
@@ -269,15 +293,15 @@
         }
         @include grid-media($tablet) {
           @include grid-column(1);
-          @include grid-push(0.25);
+          @include grid-push(-0.10);
         }
         @include grid-media($mobile) {
           @include grid-column(1);
-          @include grid-shift(1);
+          @include grid-push(-0.10);
         }
         li {
           padding-top: 15px;
-          text-align: justify;
+          // text-align: justify;
         }
       }
     }
@@ -299,6 +323,7 @@
   .project-thumbnails {
     border: 1px solid #c6c6c6;
     margin-bottom: 1em;
+    margin-top: 3%;
 
     @include grid-media($neat-grid) {
       @include grid-column(1);

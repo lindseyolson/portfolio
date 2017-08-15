@@ -1,15 +1,68 @@
-#homePage {
+.homePage {
   @include grid-container;
-  #intro {
-    @include grid-column(8);
-    @include grid-shift(2);
-    margin-top: 3em;
-    font-family: $primary-font;
-    font-size: 48px;
-    text-align: center;
+  font-family: $primary-font;
+  font-weight: 200;
+  #headshot {
+    @include grid-column(1);
+    @include grid-push(0.5);
+    border-radius: 50%;
+    margin-top: 5em;
+    @include grid-media($tablet) {
+      @include grid-column(0.75);
+      @include grid-push(0.25);
+    }
+    @include grid-media($mobile) {
+      @include grid-column(0.7);
+      @include grid-push(0.15);
+      margin-top: 1.5em;
+    }
+  }
+  p {
+    @include grid-column(2);
+    @include grid-push(0.1);
+    margin-top: 13%;
+    font-size: 24px;
+    text-align: left;
+    color: #686868;
+    @include grid-media($tablet) {
+      @include grid-column(1.1);
+      @include grid-push(0.15);
+    }
+    @include grid-media($mobile) {
+      @include grid-column(0.9);
+      @include grid-push(0.05);
+      text-align: center;
+    }
+    span {
+      color: black;
+      font-weight:400;
+      font-size: 25px;
+      }
+  }
+
+  .contact {
+    @include grid-container;
+    @include grid-media($neat-grid) {
+      @include grid-column(1);
+      @include grid-push(0.75);
+      margin-top:0.5%;
+    }
+    @include grid-media($tablet) {
+      @include grid-column(1);
+      @include grid-push(1.15);
+    }
     @include grid-media($mobile) {
       @include grid-column(1);
-
-      }
+      text-align: center;
     }
+    .fa {
+      color: black;
+      font-size: 36px;
+      padding-right: 5%;
+
+    }
+    .fa:hover {
+      color: #dbdbdb;
+    }
+  }
 }

@@ -4,17 +4,11 @@ myApp.config(function($routeProvider){
   $routeProvider.when('/', {
     templateUrl: 'views/partials/home.html',
     controller: 'ProfileController as pc'
-  }).when('/about', {
-    templateUrl: 'views/partials/about_me.html',
-    controller: 'ProjectsController as pc'
   }).when('/web_dev', {
     templateUrl: 'views/partials/web_dev.html',
     controller: 'ProjectsController as pc'
   }).when('/artwork', {
     templateUrl: 'views/partials/artwork.html',
-  }).when('/home', {
-    templateUrl: 'views/partials/home.html',
-    controller: 'ProjectsController as pc'
   }); // end route provider
 }); // end app config
 

@@ -51,31 +51,35 @@
 
   #ink-dahlia {
     @include grid-media($tablet) {
-      @include grid-shift(-1);
-      margin-top: 18.5%;
+      @include grid-shift(-1.01);
+      margin-top: 18.2%;
     }
   }
 
   #wc-vase {
     @include grid-media($neat-grid) {
       @include grid-container;
-      @include grid-shift(-1);
-      margin-top: 12%;
-      padding-top: 0.75%;
+      @include grid-shift(-1.01);
+      margin-top: 11.7%;
+      padding-top: 0.5%;
       padding-bottom: 0.25%;
     }
     @include grid-media($tablet) {
       @include grid-shift(1);
-      @include grid-push(0.25);
-      margin-top: -55%;
+      @include grid-push(0.255);
+      padding-top: 1.5%;
+      padding-bottom: 2.75%;
+      margin-top: -55.8%;
     }
   }
 
   #pencil-house {
     @include grid-media($neat-grid) {
       @include grid-shift(1);
-      @include grid-push(0.5);
-      margin-top: -43%;
+      @include grid-push(0.51);
+      margin-top: -43.3%;
+      // padding-top: -5%;
+      // padding-bottom: 0.15%;
     }
     @include grid-media($tablet) {
       @include grid-push(0.25);
@@ -87,7 +91,7 @@
     @include grid-media($neat-grid) {
       @include grid-container;
       @include grid-push(0.5);
-      margin-top: 1.25%;
+      margin-top: 1%;
     }
     @include grid-media($tablet) {
       @include grid-push(0.25);
@@ -97,7 +101,7 @@
 
   #cp-anemone {
     @include grid-media($neat-grid) {
-      margin-top: 1.25%;
+      margin-top: 1%;
     }
     @include grid-media($tablet) {
       @include grid-push(0.25);
@@ -110,7 +114,7 @@
   #wc-mini-dahlias {
     @include grid-media($neat-grid) {
       @include grid-container;
-      margin-top: -7.8%;
+      margin-top: -8.4%;
       @include grid-push(0.5);
     }
     @include grid-media($tablet) {
@@ -120,11 +124,11 @@
 
   #wc-coneflowers {
     @include grid-media($neat-grid) {
-      margin-top: -7.8%;
+      margin-top: -8.4%;
     }
     @include grid-media($tablet) {
-      @include grid-shift(-1);
-      margin-top: 30%;
+      @include grid-shift(-1.01);
+      margin-top: 32.5%;
       padding-top: 5%;
       padding-bottom: 5%;
     }
@@ -132,26 +136,25 @@
 
   #wc-monogram {
     @include grid-media($neat-grid) {
-      margin-top: 1.25%;
-      padding-bottom: 0.1%;
+      margin-top: 1%;
     }
     @include grid-media($tablet) {
       @include grid-shift(1.25);
-      margin-top: -90%;
-      margin-left: 1%;
+      margin-top: -94.5%;
+      margin-left: 1.2%;
     }
   }
 
   #ink-dreamcatcher {
     @include grid-media($neat-grid) {
       @include grid-container;
-      margin-top: 1.25%;
-      padding-bottom: 0.25%;
+      margin-top: 1%;
+      // padding-bottom: 0.25%;
     }
     @include grid-media($tablet) {
       @include grid-push(0.25);
       @include grid-shift(1);
-      margin-top: -111%;
+      margin-top: -110.8%;
       padding-bottom: 0.4%;
       margin-left: 11%;
     }
@@ -160,7 +163,7 @@
   #calligraphy-alpha {
     @include grid-media($neat-grid) {
       @include grid-push(0.5);
-      margin-top: 1.25%;
+      margin-top: 1%;
     }
     @include grid-media($tablet) {
       @include grid-push(0.25);
@@ -172,7 +175,7 @@
     @include grid-media($neat-grid) {
       @include grid-container;
       @include grid-push(-3);
-      margin-top: 36%;
+      margin-top: 35.75%;
     }
     @include grid-media($tablet) {
       @include grid-push(2);
@@ -184,7 +187,7 @@
 
   #wc-veggies {
     @include grid-media($neat-grid) {
-      margin-top: 1.25%;
+      margin-top: 1%;
     }
     @include grid-media($tablet) {
       @include grid-push(0.25);
@@ -196,7 +199,7 @@
   #wc-cosmo {
     @include grid-media($neat-grid) {
       @include grid-container;
-      margin-top: 1.5%;
+      margin-top: 1%;
     }
     @include grid-media($tablet) {
       @include grid-push(0.25);
@@ -207,7 +210,7 @@
 
   #calligraphy-xmascard {
     @include grid-media($neat-grid) {
-      margin-top: 1.5%;
+      margin-top: 1%;
     }
     @include grid-media($tablet) {
       margin-top: 1%;
